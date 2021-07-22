@@ -11,37 +11,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Care For</title>
+     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="task.css">
     <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
   </head>
 
-  <body>
+  <body id="page-head">
       <!-- Navbar-->
       <div class="container-fluid">
     <div class="row">
 
-      
-        <nav class="navbar navbar-expand-md navbar-dark  fixed-top">
-        <a href="index.html" class="logo navbar-brand text-white offset-md-2"><img src="Images/4.png" width=80px height=70px class="center" >Intrument Society Of India</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="Images/4.png" width=80px height=80px>Intrument Society Of India</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
         </ul>
       </div>
-        </nav>
-      
+    </div>
+  </nav>
+</div>
+   
 
       <!-- slider banner   -->
 
@@ -95,7 +110,12 @@
     </div>
     
   </div>
-
+   <div class="d-none d-md-block d-lg-block">
+            <h1 style="text-align: center; font-size: 50px; font-family: 'Merienda', cursive;"><span class="text_1">Explore Technology ...</span></h1>
+     </div>
+     <div class="d-block d-md-none d-lg-none">
+            <h1 style="text-align: center; font-size: 30px; font-family:'Merienda', cursive;"><span class="text_1">Explore Technology ...</span></h1>
+        </div>
       <!--end of Hero Image-->
       <!-- Major Causes-->
       
@@ -151,48 +171,63 @@
         </div>
         
       </div>
+
+      
+
       
     </div>
     
-  </div> <!-- End of Major Causes-->
+  </div>
+
+   <!-- End of Major Causes-->
       <!--Project Section-->
       <div id="events">
      <section class="proj-section bg-light py-5" id="project">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Events</h2>
-                <div class="counter-up">
-                    <div class="content">
-                      <div class="box">
-        <div class="icon"><i class="fas fa-history"></i></div>
-        <div class="counter">100+</div>
-        <div class="text">Events</div>
-      </div>
-      <div class="box">
-        <div class="icon"><i class="fas fa-gift"></i></div>
-        <div class="counter">508</div>
-        <div class="text">Completed Projects</div>
-      </div>
-      <div class="box">
-        <div class="icon"><i class="fas fa-users"></i></div>
-        <div class="counter">436</div>
-        <div class="text">Happy Clients</div>
-      </div>
-      <div class="box">
-        <div class="icon"><i class="fas fa-award"></i></div>
-        <div class="counter">120</div>
-        <div class="text">Awards Received</div>
-      </div>
-    </div>
-  </div>
-  <script>
-  $(document).ready(function(){
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1200
-    });
-  });
-  </script>
+                <div class="row">
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-microchip"></i>
+                    <h2 class="counter">215</h2>
+                    <h4 class="us">Projects</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-users"></i>
+                    <h2 class="counter">101</h2>
+                    <h4 class="us">Core Members</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-leanpub"></i>
+                    <h2 class="counter">205</h2>
+                    <h4 class="us">Workshops</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-calendar-check"></i>
+                    <h2 class="counter">105</h2>
+                    <h4 class="us">Events</h4>
+                </div>
+            </div>
+        </div>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <script src="jquery.counterup.min.js"></script>
+        <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+
+    </script>
+  
             </div>
             <div class="row">
               <!---Project 1-->
@@ -205,11 +240,9 @@
                          <i class="fas fa-plus fa-3x"></i>
                         </div>
                       </div>
-                    <img src="Images/2.jpg" class="img-fluid" alt=""></a>
+                    <img src="Images/gallery16.jpg" class="img-fluid" alt=""></a>
                         <div class="project-caption">
-                            <div class="project-caption-heading">Lorem</div>
-                            <div class="project-caption-subheading text-muted">
-                              Ipsum</div>
+                            <div class="project-caption-heading">Tech-It-Out</div>
                         </div>
                     </div>
                 </div>
@@ -223,11 +256,11 @@
                                 <div class="project-hover-content">
                                   <i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="Images/porj2.jpg" alt=""
+                            <img class="img-fluid" src="Images/proj3.png" alt=""
                         /></a>
                         <div class="project-caption">
-                            <div class="project-caption-heading">Factories</div>
-                            <div class="project-caption-subheading text-muted">Smoke</div>
+                            <div class="project-caption-heading">ALEXA-FIED</div>
+                            
                         </div>
                     </div>
                 </div>
@@ -240,31 +273,58 @@
                                 <div class="project-hover-content">
                                   <i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                      <img class="img-fluid" src="Images/porj3.jpg" alt=""></a>
+                      <img class="img-fluid" src="Images/proj2.png" alt=""></a>
                         <div class="project-caption">
-                       <div class="project-caption-heading">Flowers</div>
-                  <div class="project-caption-subheading text-muted">Kinds</div>
+                       <div class="project-caption-heading">BLUEPRINT </div>
+                  
                         </div>
                     </div>
                 </div>
+              </div>
+              <div class="row welcome text-center">
+              <div class="col-12">
+              <a href="events.html" class="btn btn-primary">CLICK HERE FOR MORE EVENTS</a>
+            </div>
+          </div>
+              <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-5">Projects</h1>
+        
+      </div>
+      <hr>
+      
+         </div>
+               <div class="row">
+
                 <!--End of Project 3-->
                 <!--Project4 -->
-                <div class="col-lg-4 col-sm-6 mb-4">
-                  
-              </div>
+                 <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="project-item">
+               <a class="project-link" data-toggle="modal"href="#projectModal4"
+                        ><div class="project-hover">
+                            <div class="project-hover-content">
+                              <i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                  <img class="img-fluid" src="Images/58.jpg" alt=""></a>
+                    <div class="project-caption">
+                   <div class="project-caption-heading">MALARIA DETECTION</div>
+              <div class="project-caption-subheading text-muted">SOFTWARE</div>
+                    </div>
+                </div>
+            </div>
               <!--End of Project 4-->
               <!--Project5 -->
               <div class="col-lg-4 col-sm-6 mb-4">
                 <div class="project-item">
-               <a class="project-link" data-toggle="modal"href="#projectModal3"
+               <a class="project-link" data-toggle="modal"href="#projectModal5"
                         ><div class="project-hover">
                             <div class="project-hover-content">
                               <i class="fas fa-plus fa-3x"></i></div>
                         </div>
                   <img class="img-fluid" src="Images/porj5.jpg" alt=""></a>
                     <div class="project-caption">
-                   <div class="project-caption-heading">Earth</div>
-              <div class="project-caption-subheading text-muted">Water</div>
+                   <div class="project-caption-heading">MALARIA DETECTION </div>
+              <div class="project-caption-subheading text-muted">SOFTWARE</div>
                     </div>
                 </div>
             </div>
@@ -272,7 +332,7 @@
                 <!--Project6 -->
                 <div class="col-lg-4 col-sm-6 mb-4">
                   <div class="project-item">
-                 <a class="project-link" data-toggle="modal"href="#projectModal3"
+                 <a class="project-link" data-toggle="modal"href="#projectModal6"
                           ><div class="project-hover">
                               <div class="project-hover-content">
                                 <i class="fas fa-plus fa-3x"></i></div>
@@ -319,24 +379,10 @@
             <p class="ok">The VIT Student Chapter of The Instrument Society of India, headquartered at IISc, Bangalore. Committed to organizing technical and non technical events for students with an aim of enriching technical knowledge and encouraging projects.</p>
             <h2 class="titles">PHOTO GALLERY</h3>
             <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              
-              <img src="Images/2.jpg" class="hari" width=300px height=200px>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
+              <a href="photo.html" class="btn btn-primary">CLICK HERE TO VIEW THE GALLERY</a> 
+         
 
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon"><i class="fas fa-gifts"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon"><i class="fas fa-mug-hot"></i></div>
-              <h4 class="title"><a href="">Dine Pad</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
-            </div>
-
+            
           </div>
         </div>
 
@@ -353,7 +399,7 @@
         <p class="ok">THE TECHNICAL TEAM OF OUR CHAPTER HAS PARTICIPITATED IN MANY HACKATHONS AND WON MANY PRICES.</p>
         <p class="ok">WE ALSO CONDUCTED MANY FUN EVENTS </p>
         <br>
-        <a href="#events" class="btn btn-primary">LEARN MORE</a>
+        <a href="video.html" class="btn btn-primary">LEARN MORE</a>
         
       </div>
       <div class="col-lg-6">
@@ -369,322 +415,106 @@
       <div id="fixed"></div>
       
     </div>
-  </figure>  
+  </figure> 
+
+
+  <section id="faq" class="faq section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+
+                <ul class="faq-list">
+
+                    <li>
+                        <a data-toggle="collapse" class="" href="#faq1">Who We Are? <i class="icofont-simple-up"></i></a>
+                        <div id="faq1" class="collapse show" data-parent=".faq-list">
+                            <p>
+                              We are the instrumentation chapter of vellore institute of technology which we will concentrate on how to improve technology and handling different projets that can solve real world problems.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-toggle="collapse" href="#faq2" class="collapsed">What We Do? <i class="icofont-simple-up"></i></a>
+                        <div id="faq2" class="collapse" data-parent=".faq-list">
+                            <p>
+                                We are having different domains where each domain is having different roles where our core members are allowed to work as a team and solve a task that is given to them.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-toggle="collapse" href="#faq3" class="collapsed">How Do We Do It? <i class="icofont-simple-up"></i></a>
+                        <div id="faq3" class="collapse" data-parent=".faq-list">
+                            <p>
+                                In technical domain where the core members are divided into team of 2-3 where each team is asked to come up with their own ideas of projects that can solve the real world problem.
+                            </p>
+                        </div>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </section>
+        <br>
+        <br>
 
    <!-- Team-->
-   <section class="team-section mt-5"  id="team">
-    <div class="page">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="team-member box">
-                  <div class="img-box">
-                    <img src="Images/team.jpg" alt="">
-                  </div>
-                  <div class="content">
-                    <h4 class="text-dark">Jessica Chan</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                      adipisicing elit. Rerum, tempora!</p>
-                      <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                     </div>
-                      </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="team-member box">
-                <div class="img-box">
-                  <img src="Images/team2.jpg" alt="">
-                </div>
-                <div class="content">
-                  <h4 class="text-dark">John Doe</h4>
-                  <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                    adipisicing elit. Rerum, tempora!</p>
-                    <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                  </div>
-                </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="team-member box">
-              <div class="img-box">
-                <img src="Images/team3.jpg" alt="">
-              </div>
-              <div class="content">
-                <h4 class="text-color">Jack smith</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                  adipisicing elit. Rerum, tempora!</p>
-                  <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="team-member box">
-              <div class="img-box">
-                <img src="Images/team3.jpg" alt="">
-              </div>
-              <div class="content">
-                <h4 class="text-color">Jack smith</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                  adipisicing elit. Rerum, tempora!</p>
-                  <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="team-member box">
-              <div class="img-box">
-                <img src="Images/team3.jpg" alt="">
-              </div>
-              <div class="content">
-                <h4 class="text-color">Jack smith</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                  adipisicing elit. Rerum, tempora!</p>
-                  <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="team-member box">
-              <div class="img-box">
-                <img src="Images/team3.jpg" alt="">
-              </div>
-              <div class="content">
-                <h4 class="text-color">Jack smith</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                  adipisicing elit. Rerum, tempora!</p>
-                  <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="team-member box">
-              <div class="img-box">
-                <img src="Images/team3.jpg" alt="">
-              </div>
-              <div class="content">
-                <h4 class="text-color">Jack smith</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                  adipisicing elit. Rerum, tempora!</p>
-                  <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="team-member box">
-              <div class="img-box">
-                <img src="Images/team3.jpg" alt="">
-              </div>
-              <div class="content">
-                <h4 class="text-color">Jack smith</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                  adipisicing elit. Rerum, tempora!</p>
-                  <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                </div>
-              </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="team-member box">
-              <div class="img-box">
-                <img src="Images/team3.jpg" alt="">
-              </div>
-              <div class="content">
-                <h4 class="text-color">Jack smith</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, 
-                  adipisicing elit. Rerum, tempora!</p>
-                  <ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
-                </div>
-              </div>
-        </div>
-        <div class="image col-lg-6">
-            <div class="team-member box">
-              <div class="img-box">
-                <img src="Images/16.jpg" alt="" class="center">
-              </div>
-              <div class="content">
-                <h4 class="text-color">UTKARSH VERMA</h4>
-                <p class="text-muted">FINANCE SECRETARY</p>
-                
-<ul class="social">
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
+   <div class="container">
+      <div class="text-center">
+          <h2 class="display-4 section-heading text-uppercase">OUR TEAM</h2>
+          <h2 class="bubble" data-text="Ashmeet Singh - Chiarperson">Ashmeet Singh - Chiarperson </h2>
+           <h2 class="bubble" data-text="KEERTI SRIVASTAVA - ADMINISTRATION SECRETARY">KEERTI SRIVASTAVA - ADMINISTRATION SECRETARY</h2>
+           <h2 class="bubble" data-text="ABANTEE GANGOPADHYAY - PUBLICITY AND MARKETING HEAD">ABANTEE GANGOPADHYAY - PUBLICITY AND MARKETING HEAD</h2>
+           <h2 class="bubble" data-text="DISHA PAUL - EVENTS HEAD">DISHA PAUL - EVENTS HEAD</h2>
+           <h2 class="bubble" data-text="AMAN MANDAL - DESIGN HEAD">AMAN MANDAL - DESIGN HEAD</h2>
+           <h2 class="bubble" data-text="UTKARSH VERMA - FINANCE HEAD">UTKARSH VERMA - FINANCE HEAD</h2>
+           <h2 class="bubble" data-text="CHIRAG SATAPATHY - TECHNICAL HEAD">CHIRAG SATAPATHY - TECHNICAL HEAD</h2>
+           <h2 class="bubble" data-text="ARPAN KARAR - PROJECTS HEAD HARDWARE">ARPAN KARAR - PROJECTS HEAD HARDWARE</h2>
+           <h2 class="bubble" data-text="S.HARIHARA SUDHAN - PROJECTS HEAD SOFTWARE">S.HARIHARA SUDHAN - PROJECTS HEAD SOFTWARE</h2>
+           <h2 class="bubble" data-text="NITHEESH SR - HUMAN RESOURCES HEAD">NITHEESH SR - HUMAN RESOURCES HEAD</h2>
+
+          <a href=team.html class="btn btn-primary">CLICK HERE TO VIEW OUR AMAZING TEAM</a>
+
+      </div>
+      <hr>
+    </div>
+    <section id="team" class="team">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2 style="font-weight: 500;" class="display-4">Faculty Coordinator</h2><br>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div class="member">
+                                <img src="Images/57.jpg" width="height" alt="">
+                                <h4>Dr.Ruban N</h4>
+                                <h5>Associate Professor Grade1</h5>
+                                <span>Department of Control and Automation</span>
+                                <span></span><a href="mailto:nruban@vit.ac.in"> <i style="color: #360d46;" class="icofont-envelope"></i></a> nruban@vit.ac.in
+                                </span>
+                                <!-- <div class="social">
+                  <a href="https://twitter.com/jv_saran"><i class="icofont-twitter"></i></a>
+                  <a href="https://www.facebook.com/j.saran.522"><i class="icofont-facebook"></i></a>
+                  <a href="https://www.instagram.com/invites/contact/?i=qoj76t0i99xw&utm_content=6f12vjd"><i class="icofont-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/saran-jv-73674017a"><i class="icofont-linkedin"></i></a>
+                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+
+                    
 
                 </div>
-              </div>
-        </div>
-       </div>
-    </div>
-  </div>
-</section>
+          </section>
+    
+    
+
 <!--End of Team Section-->
 <!--Blog Section-->
 <section class="page-section mt-5"  id="blog">
@@ -697,17 +527,15 @@
         <div class="pagediv col-12 col-lg-12">
           <div class="card mb-4 shadow color">
             <div class="card-body ">
-              <img src="Images/about3.jpg" class="card-img-top">
-              <div class="ribbon text font-weight-bold">Post-Title</div>
+              <img src="Images/31.jpg" class="card-img-top">
+              <div class="ribbon text font-weight-bold">PROGRAMMING <br>FAQ?</div>
               <article>
                 <header class="mb-2">
-                   <div class="font-weight-bold">Author Name</div>
-                  <div class="small">Posted on: <time datetime="2017-03-12T10:24">May 10, 2020 at 01:44 PM</time></div>
+                   <div class="font-weight-bold">Nikhil dangi</div>
+                  <div class="small">Posted on: <time datetime="2017-03-12T10:24">APRIL 27, 2021 at 01:44 PM</time></div>
                  </header>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Sed sed arcu bibendum massa euismod scelerisque. Morbi porttitor 
-                  tellus tempor metus posuere dictum.</p>
-                <a href="blog-post-text.html" class="btn btn-color">Read more</a>
+                <p>"Programming isn't about what you know; it's about what you can figure out.” - Chris Pine</p>
+                <a href="text.html" class="btn btn-color">Read more</a>
               </article>
             </div>
           </div>
@@ -736,22 +564,17 @@
                   <div class="col-lg-8">
                       <div class="modal-body">
               <!-- Project Details Go Here-->
-                <h2 class="text-uppercase">Project Name</h2>
-               <p class="item-intro text-muted">Lorem ipsum dolor sit amet 
-                 consectetur.</p>
-             <img class="img-fluid d-block mx-auto" src="Images/porj1.jpg" alt="" />
-           <p>Use this area to describe your project. Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit. Est blanditiis dolorem 
-              culpa incidunt minus dignissimos deserunt repellat aperiam 
-              quasi sunt officia expedita beatae cupiditate, maiores 
-              repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Tech-It-Out</h2>
+               
+             <img class="img-fluid d-block mx-auto" src="Images/gallery14.jpg" alt="" />
+           <p class="elo">In this session we have covered the recent advancement in smart electronics and artificial intelligent systems. We have explored the field of automation where all electronics and power system will be controlled through a machine without the need of human intervention and discussed the ongoing research in the field. We have also seen the progress reports of ongoing technical projects under the chapter. Doubts related to artificial intelligence were also discussed.</p>
          <ul class="list-inline">
-                              <li>Date: May 2020</li>
-                              <li>Category: lorem Ipsum</li>
+                              <li>Date: 12:08:2019 </li>
+                              <li>Category: Tech-Event</li>
                           </ul>
                           <button class="btn btn-danger" 
                           data-dismiss="modal" type="button">
-                          <i class="fas fa-times mr-1"></i>Close Project</button>
+                          <i class="fas fa-times mr-1"></i>Close Event</button>
                       </div>
                   </div>
               </div>
@@ -771,17 +594,16 @@ id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="col-lg-8">
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
-                          <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet
-                   consectetur.</p>
-             <img  src="Images/porj2.jpg" class="img-fluid d-block mx-auto"alt="" />
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                          <h2 class="text-uppercase">Alexa-Fied</h2>
+                
+             <img  src="Images/proj3.png" class="img-fluid d-block mx-auto"alt="" />
+                <p class="elo">IoT home automation is slowly but steadily becoming an important part of the daily lives of the people around the world.IoT helps make system organized and create essential, flexible and reasonable system architectures that have the ability to transfer data over a network without requiring human-to-human or human-to computer interaction. In this workshop, you will learn to create a voice-based assistant that can be employed for home automation. You will also make a distance-based door system and a temperature monitoring system.</p>
                            <ul class="list-inline">
-                              <li>Date: May 2020</li>
-                               <li>Category: Lorem Ipsum</li>
+                              <li>Date: 13/09/2020</li>
+                               <li>Category: Tech-Event</li>
                           </ul>
          <button class="btn btn-danger" data-dismiss="modal" type="button">
-           <i class="fas fa-times mr-1"></i>Close Project</button>
+           <i class="fas fa-times mr-1"></i>Close Event</button>
                       </div>
                   </div>
               </div>
@@ -802,15 +624,15 @@ tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="col-lg-8">
                       <div class="modal-body">
                  <!-- Project Details Go Here-->
-                <h2 class="text-uppercase">Project Name</h2>
-             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-             <img src="Images/porj3.jpg" class="img-fluid d-block mx-auto" alt="" />
-                          <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <h2 class="text-uppercase">Blueprint</h2>
+             
+             <img src="Images/proj2.png" class="img-fluid d-block mx-auto" alt="" />
+                          <p class="elo">Blueprint was a 3-day flagship event conducted by ISOI-VIT from 20th February to 22nd February 2019 in TT-gallery 001. The event covered topics such as: - Data Science & ML, Cloud & DevOps, and 3D printing on the 3 respective days. The speakers for the event were: Mr. A R Janardhanan, Mr. Milind Kar Ray and Mr. Vikas Garg, who spoke on their respective topics on these respective days. The event attracted a large crowd of 250 students from different branches. The event also proved to be a window for the budding engineers to the world of technology. Each day of the event was followed by giving off a memento to the guest speakers as a token of appreciation. The duration of the event was of 2 hrs during which the crowd was excellently managed by the coordinators and volunteers.</p>
                           <ul class="list-inline">
-                              <li>Date: May 2020</li>
-                              <li>Category: Lorem Ipsum</li>
+                              <li>Date: 20/02/2019 TO 22/02/2019</li>
+                              <li>Category: Tech-Event</li>
                           </ul>
-                          <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
+                          <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Event</button>
                       </div>
                   </div>
               </div>
@@ -831,19 +653,13 @@ id="projectModal4" tabindex="-1" role="dialog" aria-hidden="true">
                   <div class="col-lg-8">
                    <div class="modal-body">
                     <!-- Project Details Go Here-->
-                 <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-             <img src="images/porj4.jpg"class="img-fluid d-block mx-auto" alt="" />
-                          <p>Use this area to describe your project. 
-                            Lorem ipsum dolor sit amet, consectetur 
-                            adipisicing elit. Est blanditiis dolorem 
-                            culpa incidunt minus dignissimos deserunt 
-                            repellat aperiam quasi sunt officia expedita 
-                            beatae cupiditate, maiores repudiandae, nostrum, 
-                            reiciendis facere nemo!</p>
+                 <h2 class="text-uppercase">MALARIA DETECTION USING TRANSFER LEARNING</h2>
+                <p class="item-intro text-muted">TRANSFER LEARNING</p>
+             <img src="Images/proj4.png"class="img-fluid d-block mx-auto" alt="" />
+                          <p class="elo">The main objective of this project is to give patients the instant result whether they have malaria or not. Our product is easy to use and does not require any medical knowledge therefore can be used by anyone. It will also ensure contactless checkup during this COVID-19 pandemic and reduce some workload for the doctors.Using transfer learning models such as (VGG16, VGG19, Inception etc.) and adequate dataset, the accuracy of prediction can be boosted to a great extent and reducing the timing of medical tests to a matter of seconds. This project could be a great step to control a disease like malaria.</p>
                           <ul class="list-inline">
-                              <li>Date: May 2020</li>
-                               <li>Category: Lorem Ipsum</li>
+                              <a href="https://github.com/hariharas-wq/Malaria-Detection-Using-Tf"><li>Link: https://github.com/hariharas-wq/Malaria-Detection-Using-Tf</li></a>
+                               <li>Category: SOFTWARE</li>
                           </ul>
                           <button class="btn btn-danger" data-dismiss="modal" type="button"><i class="fas fa-times mr-1"></i>Close Project</button>
                       </div>
@@ -936,19 +752,20 @@ tabindex="-1" role="dialog" aria-hidden="true">
           </div>
         </div>
       </div>
+      
         <div class="col-lg-6">
-        <form>
+        <form action="https://formspree.io/f/mrgraarr" method="POST">
           <div class="form-group">
             <input placeholder="Your Name" type="text" name="name" 
             class="form-control">
              </div>
           <div class="form-group">
             <input placeholder="Your Email" type="email" class="form-control"
-             name="email">
+             name="email" required>
               </div>
           <div class="form-group">
             <input placeholder="Subject" type="text" class="form-control" 
-            name="subject">
+            name="subject" required>
             </div>
           <div class="form-group">
             <textarea placeholder="Message" class="form-control" 
@@ -964,10 +781,11 @@ tabindex="-1" role="dialog" aria-hidden="true">
     </div>
   </div>
 </section>
+<a class="gotopbtn" href="#page-head"> <i class="fas fa-arrow-up"></i> </a>
 <!-- End Contact Section -->
  <!-- ======= Footer ======= -->
  
- <footer class="footer mt-5" id="footer">
+ <footer class="mt-5" id="footer">
     <div class="container d-md-flex py-4">
     <div class="mr-md-auto text-center text-md-left">
       <div class="copyright">
@@ -978,22 +796,22 @@ tabindex="-1" role="dialog" aria-hidden="true">
     <div class="social-links text-center text-md-right pt-3 pt-md-0">
       <ul class="social">
         <li class="list-item">
-          <a class="list-link" href="#">
+          <a class="list-link" href="https://www.facebook.com/isoivit/">
             <i class="fab fa-facebook"></i>
           </a>
         </li>
         <li class="list-item">
-          <a class="list-link" href="#">
-            <i class="fab fa-twitter"></i>
+          <a class="list-link" href="https://www.youtube.com/channel/UCl3NVgZjiWKYrV_xn-WTmcA">
+            <i class="fab fa-youtube"></i>
           </a>
         </li>
         <li class="list-item">
-          <a class="list-link" href="#">
+          <a class="list-link" href="https://www.instagram.com/isoi.vit/">
             <i class="fab fa-instagram"></i>
           </a>
         </li>
         <li class="list-item">
-          <a class="list-link" href="#">
+          <a class="list-link" href="https://www.linkedin.com/company/isoivit/mycompany/">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
@@ -1005,27 +823,17 @@ tabindex="-1" role="dialog" aria-hidden="true">
 </footer><!-- End Footer -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
+ <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
-<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+    </script>
+
   </body>
+ 
 </html>
