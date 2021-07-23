@@ -28,7 +28,7 @@ body{
 
 }
 #navbar{
-  background-color: #6f4a8e;
+  background-color: black;
   width: 100%;
   display: block;
    
@@ -130,7 +130,7 @@ body{
   width: 100%;
   z-index: 1;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 750;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item p{
@@ -777,7 +777,7 @@ opacity: 1;
   width: 100%;
   z-index: 1;
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 750;
 }
 .us{
@@ -813,6 +813,17 @@ opacity: 1;
 }
 .us{
   font-size: 0.5rem;
+}
+.bubble{
+  position: relative;
+  font-size: 0.5vh;
+  color: #252839;
+  -webkit-text-stroke:0.3vw #383d52;
+  text-transform: uppercase;
+  font-family: 'Merienda', cursive;
+
+
+
 }
 
 }
@@ -1063,7 +1074,7 @@ opacity: 1;
 }
 .bubble{
   position: relative;
-  font-size: 4vh;
+  font-size: 3vh;
   color: #252839;
   -webkit-text-stroke:0.3vw #383d52;
   text-transform: uppercase;
@@ -1083,7 +1094,7 @@ opacity: 1;
   -webkit-text-stroke:0vw #383d52;
   border-right: 2px solid #01fe87;
   overflow: hidden;
-  animation: animate 8s linear infinite;
+  animation: animate 5s linear infinite;
 
 
 
@@ -1144,7 +1155,8 @@ opacity: 1;
     right: 0;
     animation: caret infinite;
     animation-duration: 1s;
-    animation-timing-function: steps(1, end);
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
 }
 
 
