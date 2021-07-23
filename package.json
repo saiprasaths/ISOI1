@@ -1,0 +1,19 @@
+{
+  "name": "isoi-update",
+  "version": "1.0.0",
+  "description": "\"this is a isoi website\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hariharas-wq/ISOI1.git"
+  },
+  "author": "Harihara sudhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hariharas-wq/ISOI1/issues"
+  },
+  "homepage": "https://github.com/hariharas-wq/ISOI1#readme"
+}
