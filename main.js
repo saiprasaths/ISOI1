@@ -1,5 +1,4 @@
-!(function($) {
-    "use strict";
+
 
     // Toggle .header-scrolled class to #header when page is scrolled
    
@@ -22,4 +21,3 @@
 
     
 
-})(jQuery);
